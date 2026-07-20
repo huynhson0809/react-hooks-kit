@@ -1,43 +1,66 @@
 {
-  "name": "redux-todo-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.9.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "antd": "^4.24.1",
+  "name": "react-hooks-kit",
+  "version": "1.0.0",
+  "description": "Essential React hooks for everyday development. Zero dependencies. TypeScript-first. Tree-shakeable.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript",
+    "useDebounce",
+    "useLocalStorage",
+    "useMediaQuery",
+    "useFetch",
+    "useToggle",
+    "useInterval",
+    "useClickOutside",
+    "usePrevious",
+    "zero-dependency"
+  ],
+  "author": "huynhson0809",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huynhson0809/react-hooks-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/huynhson0809/react-hooks-kit/issues"
+  },
+  "homepage": "https://github.com/huynhson0809/react-hooks-kit#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "jsdom": "^22.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5",
-    "react-scripts": "5.0.1",
-    "redux": "^4.2.0",
-    "reselect": "^4.1.7",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
   }
 }
