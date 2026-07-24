@@ -4,3 +4,4 @@ export { useDebounce } from "./useDebounce";
 export { useFetch } from "./useFetch";
 export { useMediaQuery } from "./useMediaQuery";
 export { useClickOutside } from "./useClickOutside";
+export { usePrevious } from "./usePrevious";
