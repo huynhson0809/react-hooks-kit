@@ -30,7 +30,7 @@ export function useFetch<T = unknown>(
     abortControllerRef.current?.abort();
     abortControllerRef.current = new AbortController();
 
-    setState((prev) => ({ ...prev, loading: true, error: null }));
+    setState({ data: null, loading: true, error: null });
 
     try {
       const response = await fetch(url, {
