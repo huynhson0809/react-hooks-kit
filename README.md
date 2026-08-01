@@ -21,7 +21,8 @@
   <a href="#-usage">Usage</a> ·
   <a href="#-architecture">Architecture</a> ·
   <a href="#-comparison">Comparison</a> ·
-  <a href="#-faq">FAQ</a>
+  <a href="#-faq">FAQ</a> ·
+  <a href="#-docs">Docs</a>
 </p>
 
 ---
@@ -376,6 +377,13 @@ function App() {
 
 ---
 
+## 📚 Docs
+
+- [API Reference v1.0](docs/api-1.0.md) — every hook signature, params, return types
+- [Hook Guide](docs/guide.md) — composition patterns, SSR notes, bundle size
+
+---
+
 ## Contributing & license
 
 ```bash
@@ -386,4 +394,5 @@ npm run build
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) · [SECURITY.md](SECURITY.md)
 - MIT License — [LICENSE](LICENSE)
+- [CHANGELOG.md](CHANGELOG.md)
 - Maintainer: [huynhson0809](https://github.com/huynhson0809)
