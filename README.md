@@ -1,4 +1,4 @@
-# react-hooks-kit
+# react-hookz-kit
 
 <p align="center">
   <strong>Essential React hooks for everyday development.</strong><br/>
@@ -33,7 +33,7 @@ Most React projects re-invent the same hooks — toggle, debounce, localStorage,
 fetch, media queries. Each copy is slightly different, rarely tested, never
 typed well.
 
-**react-hooks-kit** solves this:
+**react-hookz-kit** solves this:
 
 | Principle | How |
 |-----------|-----|
@@ -62,15 +62,15 @@ typed well.
 ## 📦 Install
 
 ```bash
-npm install react-hooks-kit
+npm install react-hookz-kit
 ```
 
 ```bash
-yarn add react-hooks-kit
+yarn add react-hookz-kit
 ```
 
 ```bash
-pnpm add react-hooks-kit
+pnpm add react-hookz-kit
 ```
 
 > **Peer dependency:** `react >= 16.8.0`
@@ -81,7 +81,7 @@ pnpm add react-hooks-kit
 
 ```mermaid
 flowchart LR
-  A["Your component"] -->|import| B["react-hooks-kit"]
+  A["Your component"] -->|import| B["react-hookz-kit"]
   B --> C["useToggle"]
   B --> D["useDebounce"]
   B --> E["useFetch"]
@@ -102,7 +102,7 @@ flowchart LR
 sequenceDiagram
   autonumber
   participant App as Your component
-  participant Hook as react-hooks-kit
+  participant Hook as react-hookz-kit
   participant React as React runtime
   participant Browser as Browser APIs
 
@@ -125,7 +125,7 @@ sequenceDiagram
 ### useToggle
 
 ```tsx
-import { useToggle } from "react-hooks-kit";
+import { useToggle } from "react-hookz-kit";
 
 function App() {
   const [isOpen, toggle] = useToggle(false);
@@ -137,7 +137,7 @@ function App() {
 ### useLocalStorage
 
 ```tsx
-import { useLocalStorage } from "react-hooks-kit";
+import { useLocalStorage } from "react-hookz-kit";
 
 function App() {
   const [theme, setTheme, removeTheme] = useLocalStorage("theme", "light");
@@ -155,7 +155,7 @@ function App() {
 ### useDebounce
 
 ```tsx
-import { useDebounce } from "react-hooks-kit";
+import { useDebounce } from "react-hookz-kit";
 
 function Search() {
   const [query, setQuery] = useState("");
@@ -172,7 +172,7 @@ function Search() {
 ### useFetch
 
 ```tsx
-import { useFetch } from "react-hooks-kit";
+import { useFetch } from "react-hookz-kit";
 
 function UserProfile({ id }: { id: string }) {
   const { data, loading, error, refetch } = useFetch<User>(
@@ -194,7 +194,7 @@ function UserProfile({ id }: { id: string }) {
 ### useMediaQuery
 
 ```tsx
-import { useMediaQuery } from "react-hooks-kit";
+import { useMediaQuery } from "react-hookz-kit";
 
 function App() {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -206,7 +206,7 @@ function App() {
 ### useClickOutside
 
 ```tsx
-import { useClickOutside } from "react-hooks-kit";
+import { useClickOutside } from "react-hookz-kit";
 
 function Dropdown() {
   const [open, setOpen] = useState(true);
@@ -220,7 +220,7 @@ function Dropdown() {
 ### usePrevious
 
 ```tsx
-import { usePrevious } from "react-hooks-kit";
+import { usePrevious } from "react-hookz-kit";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -237,7 +237,7 @@ function Counter() {
 ### useInterval
 
 ```tsx
-import { useInterval } from "react-hooks-kit";
+import { useInterval } from "react-hookz-kit";
 
 function Timer() {
   const [seconds, setSeconds] = useState(0);
@@ -301,7 +301,7 @@ Build output:
 
 ## 🆚 Comparison
 
-| | **react-hooks-kit** | **Writing your own** | **Large hook libs** |
+| | **react-hookz-kit** | **Writing your own** | **Large hook libs** |
 |--|---------------------|----------------------|---------------------|
 | **Dependencies** | 0 | 0 | Often many |
 | **Bundle size** | Tree-shake to ~1KB per hook | Varies | Often >10KB |
@@ -314,7 +314,7 @@ Build output:
 
 | You need… | Prefer |
 |-----------|--------|
-| A few well-typed hooks, no bloat | **react-hooks-kit** |
+| A few well-typed hooks, no bloat | **react-hookz-kit** |
 | Full UI component library | Chakra / MUI hooks |
 | One specific hook | Copy from here or write your own |
 | Animation / gesture hooks | framer-motion / use-gesture |
@@ -349,11 +349,11 @@ v1.x public API is stable. Breaking changes only in major versions.
 ## Quick start (copy-paste)
 
 ```bash
-npm install react-hooks-kit
+npm install react-hookz-kit
 ```
 
 ```tsx
-import { useToggle, useDebounce, useLocalStorage } from "react-hooks-kit";
+import { useToggle, useDebounce, useLocalStorage } from "react-hookz-kit";
 
 function App() {
   const [dark, toggleDark] = useToggle(false);

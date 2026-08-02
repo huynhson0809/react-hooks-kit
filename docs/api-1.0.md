@@ -1,6 +1,6 @@
 # API Reference — v1.0
 
-Public API surface for **react-hooks-kit**. All exports are named and tree-shakeable.
+Public API surface for **react-hookz-kit**. All exports are named and tree-shakeable.
 
 ---
 

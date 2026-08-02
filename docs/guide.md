@@ -1,6 +1,6 @@
 # Hook Guide
 
-Patterns and recipes for common use cases with **react-hooks-kit**.
+Patterns and recipes for common use cases with **react-hookz-kit**.
 
 ---
 
@@ -11,7 +11,7 @@ Hooks compose naturally. Here are real-world patterns:
 ### Dark mode with persistence
 
 ```tsx
-import { useLocalStorage, useMediaQuery } from "react-hooks-kit";
+import { useLocalStorage, useMediaQuery } from "react-hookz-kit";
 
 function useDarkMode() {
   const prefersDark = useMediaQuery("(prefers-color-scheme: dark)");
@@ -30,7 +30,7 @@ function useDarkMode() {
 
 ```tsx
 import { useState } from "react";
-import { useDebounce, useFetch } from "react-hooks-kit";
+import { useDebounce, useFetch } from "react-hookz-kit";
 
 function useSearch(endpoint: string) {
   const [query, setQuery] = useState("");
@@ -48,7 +48,7 @@ function useSearch(endpoint: string) {
 
 ```tsx
 import { useState } from "react";
-import { useClickOutside, useToggle } from "react-hooks-kit";
+import { useClickOutside, useToggle } from "react-hookz-kit";
 
 function Dropdown({ items }: { items: string[] }) {
   const [open, toggle] = useToggle(false);
@@ -75,7 +75,7 @@ function Dropdown({ items }: { items: string[] }) {
 
 ```tsx
 import { useRef } from "react";
-import { useInterval, usePrevious } from "react-hooks-kit";
+import { useInterval, usePrevious } from "react-hookz-kit";
 
 function useAutoSave(data: object, saveFn: (d: object) => Promise<void>) {
   const prev = usePrevious(data);
@@ -117,7 +117,7 @@ Each hook is in its own file. With tree-shaking (Vite, webpack 5+, Rollup):
 
 ```tsx
 // Only useToggle code is included in your bundle
-import { useToggle } from "react-hooks-kit";
+import { useToggle } from "react-hookz-kit";
 ```
 
 Unused hooks are completely eliminated. Typical per-hook cost: **200–500 bytes** minified.

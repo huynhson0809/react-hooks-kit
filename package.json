@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks-kit",
+  "name": "react-hookz-kit",
   "version": "1.0.0",
   "description": "Essential React hooks for everyday development. Zero dependencies. TypeScript-first. Tree-shakeable.",
   "main": "dist/index.js",

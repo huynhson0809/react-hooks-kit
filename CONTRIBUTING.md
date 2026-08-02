@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to **react-hooks-kit**!
+Thanks for your interest in contributing to **react-hookz-kit**!
 
 ## How to contribute
 
